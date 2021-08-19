@@ -140,7 +140,7 @@ bool FOnlineIdentityCognito::Login(int32 LocalUserNum, const FOnlineAccountCrede
 
 			UBAProfile* Profile = NewObject<UBAProfile>();
 			Profile->BAUser = User;
-			Profile->ID = User->UserID;
+			Profile->IntegerId = User->UserID;
 			Profile->ProfileName = User->Username;
 
 			User->Profiles.Add(Profile);
