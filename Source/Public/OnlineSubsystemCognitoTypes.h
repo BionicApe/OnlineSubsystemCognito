@@ -19,15 +19,10 @@ class FOnlineSessionInfoCognito : public FOnlineSessionInfo
 protected:
 	
 	/** Hidden on purpose */
-	FOnlineSessionInfoCognito(const FOnlineSessionInfoCognito& Src)
-	{
-	}
+	FOnlineSessionInfoCognito(const FOnlineSessionInfoCognito& Src) = delete;
 
 	/** Hidden on purpose */
-	FOnlineSessionInfoCognito& operator=(const FOnlineSessionInfoCognito& Src)
-	{
-		return *this;
-	}
+	FOnlineSessionInfoCognito& operator=(const FOnlineSessionInfoCognito& Src) = delete;
 
 PACKAGE_SCOPE:
 
